@@ -4,7 +4,7 @@
   "description": "smsaero.ru API wrapper package",
   "main": "smsaero.js",
   "scripts": {
-    "test": "vows --spec"
+    "test": "echo test"
   },
   "author": "Leonid Averianov",
   "license": "MIT",

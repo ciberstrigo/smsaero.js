@@ -2,9 +2,9 @@
 The simple wrapper between smsaero.ru API 2.0 and your project.
 
 # installation
-> npm install 
+` npm install `
 
 # dependencies
-> request
+` request `
 
 # 
