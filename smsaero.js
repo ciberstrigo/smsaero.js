@@ -1,10 +1,9 @@
-
+//#SIGNS
 const DIRECT = "DIRECT"
 const SERVICE = "SERVICE"
 const INFO = "INFO"
 const DIGITAL = "DIGITAL"
 const INTERNATIONAL = "INTERNATIONAL"
-
 
 var request = require("request");
 
@@ -12,7 +11,6 @@ class Aero {
     constructor (login, passwd) {
         this.login = login;
         this.passwd = passwd;
-
         this.sms = this.sms();
         this.sign = this.sign();
         this.group = this.group();
@@ -21,7 +19,6 @@ class Aero {
         this.hlr = this.hlr();
         this.number = this.number();
         this.viber = this.viber();
-        
     }
     execute (method, params, cb) {
         let url = `https://${this.login}:${this.passwd}@gate.smsaero.ru/v2/${method}?${objToStr(params)}`;
@@ -148,13 +145,13 @@ objToStr = (params) => {
     return result.join("&");    
 }
 
-module.exports = Aero();
+// module.exports = new Aero();
 
 // let aero = new Aero ("", "");
 
 // aero.sms.send(
 //     {
-//         number: '79999999999',
+//         number: '79771671956',
 //         sign: 'NEWS',
 //         text: 'test',
 //         channel: 'INFO'

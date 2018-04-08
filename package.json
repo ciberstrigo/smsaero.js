@@ -1,17 +1,14 @@
 {
-  "name": "sms",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "smsaero.js",
+  "version": "0.1.0",
+  "description": "smsaero.ru API wrapper package",
+  "main": "smsaero.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vows --spec"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Leonid Averianov",
+  "license": "MIT",
   "dependencies": {
-    "dotenv": "^5.0.0",
-    "querystring": "^0.2.0",
-    "request": "^2.83.0",
-    "smsaero": "0.0.3"
+    "request": "^2.83.0"
   }
 }
